@@ -1,6 +1,6 @@
 # Image Captioning Script
 
-This script generates dense captions for an image using Azure Cognitive Services and processes the scene description based on the generated captions.
+This script generates dense captions for an image using Azure Open AI Service' Computer Vision and Language APIs and processes the scene description based on the generated captions. For managing the prompts to the language (chat) service we use Prompty.
 
 
 ## Prerequisites
