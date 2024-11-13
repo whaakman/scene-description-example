@@ -62,13 +62,14 @@ model:
         api_key: <"YourAzureOpenAIKey">
 ```
 **Usage**
+
 To run the script, use the following command:
 ```sh
 python [image_url]
 ```
 - image_url: The URL of the image you want to analyze. If not provided a default URL will be used.
 
-Example
+_Example_
 ```sh
 python https://example.com/image.jpg
 ```
