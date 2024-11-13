@@ -3,7 +3,6 @@
 This script generates dense captions for an image using Azure Cognitive Services and processes the scene description based on the generated captions.
 
 
-
 ## Prerequisites
 
 - Python 3.6 or higher
@@ -13,6 +12,8 @@ You can install the required packages using pip:
 ```sh
 pip install requests argparse json prompty[azure] dataclasses typing halo
 ```
+
+- Visual Studio Code Prompty Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.prompty
 
 - Azure OpenAI Service 
 - GPT4 model deployed
@@ -37,7 +38,7 @@ Azure Cognitive Services: You need an Azure Cognitive Services account. Set up y
 
 Configuration: Update the following variables in imagecaption.py with your Azure Cognitive Services details. You can find these by navigating to your Azure Open AI Service, they should be visible on the "overview" tab. Ensure you copy the endpoint for the **Computer Vision API**:
 
-![alt text](img\image-1.png)
+![alt text](img/image-1.png)
 
 ```Python
 CognitiveServicesEndpoint = "YourCognitiveServiceEndPoint"
@@ -48,7 +49,7 @@ CognitiveServiceEndpointKey = "CognitiveServiceEndPointKey"
 
 Update the `imagecaption.prompty` file with your Azure OpenAI details. You can find these by navigating to your Azure Open AI Service, they should be visible on the "overview" tab. Ensure you copy the endpoint for the **Language API**:
 
-![alt text](img\image.png)
+![alt text](img/image.png)
 
 ```yaml
 model:
@@ -88,5 +89,5 @@ Scene Description: A person is holding a frying pan and cooking food on a stove.
 ```
 
 
-![alt text](img\imageresult.png)
+![alt text](img/imageresult.png)
 
